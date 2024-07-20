@@ -26,6 +26,7 @@ conda create --name agent python=3.10
 cd HealthcareAgent
 pip install -r requirements.txt
 ```
+如果提示：UnicodeDecodeError: 'gbk' codec can't decode byte 0x81 in position 23，则删除requirement.txt中的中文字符，或者set PYTHONUTF8=1
 
 后续下载模型还需要安装 Git 和 Git lfs
 
